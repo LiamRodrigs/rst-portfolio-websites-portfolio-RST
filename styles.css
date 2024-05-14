@@ -1,0 +1,51 @@
+.button {
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #29b941;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 8, 0);
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+  }
+  
+  .box:hover {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(234, 0, 255);
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  .slide {
+    animation: slidein 3s ease-in-out infinite;
+  }
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(251, 255, 0);
+  }
+  
+  .box.active {
+    background-color: rgb(255, 0, 98);
+  }  
